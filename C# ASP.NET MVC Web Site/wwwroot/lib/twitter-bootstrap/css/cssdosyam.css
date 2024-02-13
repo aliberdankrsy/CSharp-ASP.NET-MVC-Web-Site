@@ -1,0 +1,302 @@
+﻿.bg-turuncu{
+    background-color: #ff9734 !important;
+
+}
+.arkaplanrengi{
+    background-color: #fafb9c !important;
+}
+.icerikler {
+    background-color: #C6CF9B !important;
+    border: groove;
+    border-color: #11235A;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.patternarkaplan {
+    background-image: url(/lib/images/arkaplanresmi.png);
+    background-repeat: no-repeat; /* repeat-x repeat-y*/
+    background-size: cover; /* Desenin sayfa boyunca yayılmasını sağlar */
+}
+.ustmenuarka {
+    background-color: #11235A !important;
+    color: #fff !important;
+    padding: 0.5rem !important;
+}
+.ustmenuon {
+    background-color: #596FB7 !important;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 40px; /* Kenar yuvarlatma */
+}
+
+/* kayan yazı oluşturma css-------------------------------------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Sayfa dışına taşan içerikleri gizler */
+}
+
+.scrolling-text-container {
+    overflow: hidden; /* Taşan içerikleri gizler */
+}
+
+.scrolling-text {
+    animation: scrollText 8s linear infinite; /* Animasyonu tanımlar */
+    /*font-size: 150%;*/ /* Yazıyı yüzde olarak büyütme */
+    color: #fff;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Başlangıç konumu */
+    }
+
+    100% {
+        transform: translateX(-100%); /* Bitiş konumu */
+    }
+}
+/* kayan yazı oluşturma css-------------------------------------------------------------------------------------------------------------------*/
+
+.menubaslik {
+    text-align: center;
+    color: white;
+    background-color: #11235A;
+    border-radius: 40px; /* Kenar yuvarlatma */
+    border: groove; /* Kenarlık */
+}
+/*menü butonları*/
+.custom-button {
+    background-color: #596FB7; /* Arka plan rengi */
+    display: block;
+    width: 100%;
+    padding: 10px 20px; /* Buton içeriği çevresindeki boşluk */
+    font-size: 16px; /* Yazı boyutu */
+    border: groove; /* Kenarlık */
+    cursor: pointer; /* İmleci el simgesine çevir */
+    color: #fff;
+    border-color: #11235A;
+    text-align: center;
+    border-radius: 40px; /* Kenar yuvarlatma */
+    margin-top: 10px; /* Üst boşluk */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+    /* Butonun üzerine gelindiğinde rengini değiştirme */
+    .custom-button:hover {
+        background-color: #588cc4;
+        text-decoration: none; /* Linkin altındaki çizgiyi kaldırır */
+        color: #000000;
+    }
+
+/*menu butonları*/
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #F6ECA9 !important;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    border: groove;
+    border-color: #ffec5a;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 40px; /* Kenar yuvarlatma */
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border:groove;
+    border-color: #11235A;
+}
+
+
+.btn-outline-dark {
+    color: #343a40;
+    border-color: #000000;
+    border: double;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #000000;
+}
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #0069d9;
+        border-color: #000000;
+    }
+
+.sepeticerik { /*sepet sayfası içerik bölümü*/
+    background-color: #F6ECA9 !important;
+    border: groove;
+    border-color: #000000;
+}
+
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #007bff;
+    border:groove;
+    border-color: #11235A;
+}
+/*form stil kodları*/
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.divlogo { /*sayfa logosu*/
+    margin-left: 40px; /* Soldan 20 piksel boşluk bırakır */
+    background-image: url('/lib/images/logo.png'); /* Resmin dosya yolu */
+    background-size: cover; /* Resmin boyutunu öğe boyutuna uyacak şekilde ayarlar */
+    background-position: center; /* Resmi öğe ortasına hizalar */
+    background-repeat: no-repeat; /* Resmi tekrar etmez */
+    width: 13%; /* Genişliği 300 piksel olarak ayarlar */
+}
+
+.icerikler2 { /*ödeme sayfası içerik bölümü*/
+    background-color: #F6ECA9 !important;
+    /* border: groove; */
+    border-color: #11235A;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 100%;
+}
+
+.sepetbaslik { /*sepet sayfası baslık*/
+    background-color: #C6CF9B;
+}
+
+.btn-danger { /*sepet sayfasında ürünü sil butonu*/
+    color: #fff;
+    background-color: #ff5b5b;
+    border-color: #11235A;
+}
+    .btn-danger:hover {
+        color: #fff;
+        background-color: #ff0000;
+        border-color: #11235A;
+    }
+
+.tableborder { /*sepet sayfasında tabloya kenarlık ekledik*/
+    border: groove;
+    border-color: #596FB7;
+}
+
+
+
+
+
+
+
+/*alt bilgi paneli*/
+.main-container {
+    height: 3vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #596FB7;
+}
+/*alt bilgi paneli sol div*/
+.text-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* background-color: #ff9734; */
+}
+
+    .text-container p {
+        color: #000000;
+        margin-left: 20px; /* boşluk ekledik */
+    }
+
+    /*alt bilgi paneli sağ div*/
+.image-container {
+    flex: 1;
+    display: flex;
+    /* background-color: #f64d4d; */
+    justify-content: flex-end; /* Resimleri sağa yaslamak için */
+}
+
+    .image-container img {
+        height: 100%;
+        width: auto;
+        max-height: 100%;
+        margin-right: 10px; /* boşluk ekledik */
+        
+    }
+
+
+/*Sayfanın arka plan rengini rastgele değiştirme*/
+.custom-div {
+    width: 10%;
+    height: 3vh;
+    position: fixed;
+    right: 0;
+    top: auto;
+    bottom: 4%; /* Sayfanın altından yukarıda 4% mesafede */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Butonu sağa yaslamak için */
+}
+
+    .custom-div button {
+        /* buton stilleri */
+        background-color: #C6CF9B;
+        border: groove;
+        border-color: #11235A;
+        color:#000000;
+
+    }
+        /*butonun üstüne gelince*/
+        .custom-div button:hover {
+            background-color: #F6ECA9;
+            color:#000000;
+        }

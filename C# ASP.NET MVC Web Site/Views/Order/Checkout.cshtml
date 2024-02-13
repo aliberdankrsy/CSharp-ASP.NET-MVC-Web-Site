@@ -1,0 +1,78 @@
+﻿@model Order
+<!--KAYDIRMA ÇUBUĞU-->
+<style>
+    /* Kaydırma çubuğu stilini ayarlayın */
+    body {
+        overflow-y: scroll; /* Dikey kaydırma çubuğunu göstermek için */
+        margin: 0; /* Sayfa kenar boşluklarını sıfırla */
+    }
+
+    /* Opsiyonel: Kaydırma çubuğu tasarımını özelleştirin */
+    ::webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::webkit-scrollbar-thumb {
+        background-color: #888;
+    }
+
+    ::webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+</style>
+
+
+
+<div class="menubaslik"><h4>SİPARİŞİNİ TAMAMLA</h4></div><!--ŞİPARİŞ TAMAMLA----------------------------->
+<style>
+    .ortali-h {
+        text-align: center; /* Metni yatayda ortalar */
+    }
+</style>
+<h2 class="ortali-h">Şimdi göz atın</h2>
+<p class="ortali-h">Siparişinden tek bir adım uzaktasın! Lüften aşağıda istenilen bilgileri doldur. Bizde ürünlerinizi hemen teslim etmek için yola koyulalım.</p>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<div class="icerikler2">
+    <form asp-action="Checkout" method="post">
+        <h3>Alıcı :</h3>
+        <div class="form-group">
+            <label>İsim:</label><input asp-for="Name" class="form-control" />
+        </div>
+        <h3>Adres:</h3>
+        <div class="form-group">
+            <label>Satır 1:</label><input asp-for="Line1" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Satır 2:</label><input asp-for="Line2" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Satır 3:</label><input asp-for="Line3" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Şehir:</label><input asp-for="City" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>İlçe:</label><input asp-for="State" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Posta Kodu:</label><input asp-for="Zip" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Ülke:</label><input asp-for="Country" class="form-control" />
+        </div>
+        <h3>Seçenekler:</h3>
+        <div class="checkbox">
+            <label>
+                <input asp-for="GiftWrap" /> Ürünleri hediye paketi yapın.
+            </label>
+        </div>
+        <div class="text-center">
+            <input class="btn btn-primary" type="submit" value="Siparişi Tamamla" />
+        </div>
+    </form>
+</div>
+<div><p>.</p></div>
+
+

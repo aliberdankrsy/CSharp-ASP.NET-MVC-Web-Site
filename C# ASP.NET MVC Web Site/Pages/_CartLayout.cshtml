@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Spor Mağazası</title>
+    <link href="/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/lib/twitter-bootstrap/css/cssdosyam.css"><!--Oluşturduğum CSS dosyasını html sayfasına bağladım.-->
+</head>
+<body class="patternarkaplan">
+    <div class="ustmenuarka">
+        <div class="ustmenuon">
+            <div class="row">
+                <div class="divlogo"></div>
+                <div class="navbar-brand ml-2">
+
+                    <div class="scrolling-text-container">
+                        <p class="scrolling-text">! SPOR ÜRÜNLERİ MAĞAZASINA HOŞ GELDİNİZ !</p><!--Kayan yazı-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-1 p-1 sepeticerik">
+        @RenderBody()
+    </div>
+
+    <!--renk değiştirme butonu -->
+    <div class="custom-div">
+        <button id="changeColorButton">Sayfa Rengini Değiştir</button>
+    </div>
+
+
+
+    <div class="main-container">
+        <div class="text-container">
+            <p>Ali Berdan Karasoy</p>
+        </div>
+        <div class="image-container">
+            <img src="/lib/images/instalogo.png" alt="Instagram Logo">
+            <img src="/lib/images/facelogo.png" alt="Facebook Logo">
+            <img src="/lib/images/twitterlogo.png" alt="Twitter Logo">
+        </div>
+    </div>
+
+    <script src="/lib/twitter-bootstrap/js/jsdosyam.js"></script>
+</body>
+</html>

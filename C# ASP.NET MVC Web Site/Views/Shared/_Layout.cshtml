@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Spor Mağazası</title>
+    <link href="/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/lib/twitter-bootstrap/css/cssdosyam.css"><!--Oluşturduğum CSS dosyasını html sayfasına bağladım.-->
+</head>
+<body class="patternarkaplan">
+    <!-- Sayfanın arka plan resmini değiştirdik-->
+    <div class="ustmenuarka">
+        <!-- üst menü arka plan rengi-->
+        <div class="ustmenuon">
+            <!--üst menü ön plan rengi-->
+            <div class="row">
+                <div class="divlogo"></div>
+                <div class="col navbar-brand">
+                    <div class="scrolling-text-container">
+                        <p class="scrolling-text">! SPOR ÜRÜNLERİ MAĞAZASINA HOŞ GELDİNİZ !</p><!--Kayan yazı-->
+                    </div>
+                </div>
+                <div class="col-6 text-right">
+                    <vc:cart-summary />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-1 p-1">
+
+        <div id="categories" class="col-3">
+            <div class="menubaslik"><h4>MENÜ</h4></div><!--MENÜ----------------------------->
+            <a class="custom-button" href="/Page1">
+                Tüm Ürünler
+
+            </a>
+
+            <a class="custom-button" href="/Chess/Page1">
+                Satranç
+            </a>
+            <a class="custom-button" href="/Soccer/Page1">
+                Futbol
+            </a>
+            <a class="custom-button" href="/Watersports/Page1">
+                Su Sporları
+            </a>
+
+        </div>
+        <div class="icerikler">
+            <!--içerik kısmı-->
+            <!--<div class="renk"><p>dsfsdfdsf</p></div>-->
+            @RenderBody()
+        </div>
+    </div>
+    <!--renk değiştirme butonu -->
+    <div class="custom-div">
+        <button id="changeColorButton">Sayfa Rengini Değiştir</button>
+    </div>
+
+    <!--alt bilgi paneli -->
+    <div class="main-container">
+        <!--alt bilgi paneli sol div-->
+        <div class="text-container">
+            <p>Ali Berdan Karasoy</p>
+        </div>
+        <!--alt bilgi paneli sağ div-->
+        <div class="image-container">
+            <img src="/lib/images/instalogo.png" alt="Instagram Logo">
+            <img src="/lib/images/facelogo.png" alt="Facebook Logo">
+            <img src="/lib/images/twitterlogo.png" alt="Twitter Logo">
+        </div>
+    </div>
+
+
+
+    <script src="/lib/twitter-bootstrap/js/jsdosyam.js"></script>
+</body>
+</html>
